@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FoodBell</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="asal_darimakanan">Asal Makanan</string>
+    <string name="harga_dari_makanan">Harga Makanan</string>
+    <string name="nama_asli_makanan">Nama Makanan</string>
+    <string name="asal_makanan">Asal Makanan</string>
+    <string name="harga_makanan">Harga Makanan</string>
+    <string name="namefood">nameFood</string>
+</resources>
