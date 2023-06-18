@@ -1,6 +1,5 @@
 package com.example.uts_khaliq
 
-
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -25,7 +24,6 @@ class MakananAdapter (val makanan: List<Makanan>, val context : Context): Recycl
             parent, false)
         return MyViewHolder(layout)
     }
-
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.gambar.setImageResource(makanan.get(position).gambar)
         holder.nameMakanan.text = makanan.get(position).nameMakanan
@@ -38,7 +36,6 @@ class MakananAdapter (val makanan: List<Makanan>, val context : Context): Recycl
         val harga =model.hargaMakanan
         val deskripsi= model.deksripsi
         val gambar = model.gambar
-
 
         holder.itemView.setOnClickListener {
 
