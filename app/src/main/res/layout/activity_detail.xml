@@ -5,19 +5,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <androidx.cardview.widget.CardView
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardButton"
+            style="?attr/materialCardViewElevatedStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12.dp"
-            android:backgroundTint="?attr/colorPrimary"
-            android:padding="12dp"
-            android:textColor="?attr/colorPrimary"
+            android:backgroundTint="?attr/colorPrimaryFixed"
+            android:textColor="?attr/colorPrimaryFixed"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:cardPreventCornerOverlap="false">
@@ -152,24 +155,30 @@
                             android:text="Deskripsi Makanan"
                             android:textAlignment="gravity"
                             android:textColor="?attr/colorOnPrimary" />
-
-
                     </LinearLayout>
+
+<!--                    <Button-->
+<!--                        android:id="@+id/bttn1"-->
+<!--                        style="?attr/materialButtonOutlinedStyle"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="end"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:paddingRight="16dp"-->
+<!--                        android:textColor="?attr/colorPrimaryVariant"-->
+<!--                        android:backgroundTint="?attr/colorOnPrimary"-->
+<!--                        android:text="Kembali" />-->
                 </LinearLayout>
-
-                <!--    <Button-->
-                <!--        android:id="@+id/bttn1"-->
-                <!--        android:layout_width="wrap_content"-->
-                <!--        android:layout_height="wrap_content"-->
-                <!--        android:text="Kembali"-->
-                <!--        android:textColor="?attr/colorPrimaryVariant"-->
-                <!--        app:layout_constraintEnd_toEndOf="parent"-->
-                <!--        app:layout_constraintTop_toBottomOf="@id/verticalLayout" />-->
-
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="Button Back"
+            app:backgroundTint="?attr/colorPrimaryFixed"
+            app:srcCompat="@drawable/icon_back"/>
     </LinearLayout>
-
-
 </ScrollView>

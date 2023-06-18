@@ -1,24 +1,19 @@
 package com.example.uts_khaliq
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class DetailActivity : AppCompatActivity() {
-
-//    private lateinit var buttonIntent : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
             val actionBar: ActionBar? = supportActionBar
-            actionBar!!.setDisplayHomeAsUpEnabled(true)
-            actionBar!!.setDisplayHomeAsUpEnabled(true)
+            actionBar!!.setDisplayHomeAsUpEnabled(false)
 
             val namaMakanan = findViewById<TextView>(R.id.nameFood)
             val asalMakanan = findViewById<TextView>(R.id.jAsalMakanan)
@@ -40,14 +35,10 @@ class DetailActivity : AppCompatActivity() {
             price.text = harga
             sampul.setImageResource(gambar)
 
+        val buttonBack = findViewById<FloatingActionButton>(R.id.floating_back)
 
-
-//        buttonIntent = findViewById(R.id.bttn1)
-//
-//        buttonIntent.setOnClickListener{
-//            startActivity(intent)
-//            finish()
-//            }
+        buttonBack.setOnClickListener{
+            finish()
+            }
         }
-
 }
